@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.maincontainer{
+  display:flex;
+  flex-direction: row;
+}
+
+.imgcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position:relative;
+  background-image: url(./assets/halie-west-bTzpau9mKT4-unsplash.jpg);
+  background-size: cover;
+  width: 70vh;
+  height: 100vh;
+}
+
+.odin{
+
+  background-color: #00000063;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color:white;
+}
+#imgpara{
+  position: absolute;
+  color: white;
+  bottom: 0px;
+  right: 10px;
+}
+
+#odinlogo{
+  max-width: 100px;
+}
+
+.heroimg:link{
+ color:white;
+}
+.heroimg:visited{
+  color:white; 
+}
+
+.formcontainer{
+  display:flex; 
+  flex-direction: column;
+  width: 100vh;
+}
+
+.header, .formdiv, .submit{
+  display: flex ;
+  margin: 30px;
+  flex-grow: 1;
+}
+.formdiv{
+  flex-direction: column;
+}
+
+.outerform{
+  flex-grow: 1;
+}
+.innerform{
+  display:flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+.topform, .bottomform{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1
+}
+
+@media only screen and (max-width: 550px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    display: flex;
+    max-width: 550px;
+  }
+
+  .maincontainer{
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    width:550px;
+    height: 100vh;
+  }
+
+  .imgcontainer{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .formcontainer{
+    display:flex; 
+    flex-direction: column;
+    width: 100%;
+  }
+  .innerform{
+    gap:20px;
+  }  
+  .topform, .bottomform{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap:20px
+  }
+
+  .topform div input, .bottomform div input{
+    display: flex;
+    gap: 20px;
+  }
+}
+
